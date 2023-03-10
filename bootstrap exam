@@ -1,0 +1,103 @@
+<html>    
+    <head>
+        <title> ADMIN | Login </title>    
+        <link rel="stylesheet" type="text/css" href="css/style.css">    
+    </head>  
+    <style>
+        body  
+        {  
+            margin:0;  
+            padding:0;  
+            background-color: rosybrown ;  
+            font-family: 'Arial';  
+        }  
+        .login
+        {  
+            width: 480px;  
+            overflow: visible;  
+            margin: auto;  
+            margin: 20 20 20 450px;  
+            padding: 100px;  
+            background: burlywood;  
+            border-radius: 35px ;  
+        }  
+        h1
+        {
+            text-align: center;  
+            color: #277582;  
+            padding: 20px;  
+        }  
+        label
+        {  
+            color: blanchedalmond;  
+            font-size: 17px;  
+        }  
+        #a-id
+        {  
+            width: 390px;
+            height: 32px;
+            border: none;   
+            border-radius: 4px;  
+            padding-left: 4px;  
+            border-radius: 7px;
+        }  
+        #aPass
+        {  
+            width: 390px;  
+            height: 32px;  
+            border: none;  
+            border-radius: 4px;  
+            padding-left: 4px;  
+            border-radius: 7px;
+        }  
+        #alog
+        {  
+            width: 120px;  
+            height: 30px;  
+            border: none;
+            border-radius: 17px;  
+            padding-left: 7px;  
+            color: blue;  
+        }  
+        
+        #rst,#hm
+        {
+            width: 120px;  
+            height: 30px;  
+            border: none;
+            border-radius: 17px;  
+            padding-left: 7px;  
+            color: blue;
+        }
+        
+        
+/*        span
+        {  
+            color: #277582;  
+            font-size: 17px;  
+        }  
+        a
+        {  
+            float: top;  
+        }      */
+    </style>
+    <body>
+        <h1 style="color: wheat"> ADMIN LOGIN </h1>    
+        <div class="login">    
+            <form id="login" method="post" action="admin_login_b.jsp" >
+                <lable><b> Mail ID : </b></lable><br><br>
+                <input type="text" name="a-id" id="a-id" placeholder="Enter your id" required><br><br>
+                <lable><b> Password : </b></lable><br><br>
+                <input type="Password" name="aPass" id="aPass" placeholder="Enter your Password" required><br><br><br>
+                <input type="submit" name="alog" id="alog" value="Log In Here">
+                
+                <button type="reset" class="reset" id="rst" > Reset </button>
+                <button type="button" id="hm"> 
+                    <a href="main_page.jsp"> Home </a>
+                </button>
+                
+                <!--<a href="pass_forgt.jsp"> Forgot Password?</a>-->
+            </form>
+        </div>    
+    </body>
+</html>
